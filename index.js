@@ -84,3 +84,24 @@ var swiper = new Swiper(".product-slider", {
       },
     },
   });
+
+
+
+
+
+// ---------- SCROLL ANIMATION -----------
+
+
+  const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+    // reset: true   
+  })
+  
+  sr.reveal(`.features, .products, .categories, .review, .blogs, .footer`)
+  // sr.reveal(`.contant div`, { delay: 600, origin: 'bottom', interval: 100 })
+  // sr.reveal(`.skills__content:nth-child(1), .contact__content:nth-child(1)`, { origin: 'left' })
+  // sr.reveal(`.skills__content:nth-child(2), .contact__content:nth-child(2)`, { origin: 'right' })
+  // sr.reveal(`.qualification__content , .services__card`, { interval: 100 })
